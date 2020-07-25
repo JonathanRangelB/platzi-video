@@ -6,11 +6,11 @@ import Carousel from "../components/Carousel";
 import CarouselItem from "../components/CarouselItem";
 import Footer from "../components/Footer";
 import useInitialState from "../Hooks/useInitialState";
-import "../assets/styles/App.scss";
+import "../assets/styles/Home.scss";
 
 const API = "http://localhost:3000/initialState";
 
-function App() {
+function Home() {
   const initialState = useInitialState(API);
   return (
     <>
@@ -46,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
