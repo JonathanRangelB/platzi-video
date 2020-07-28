@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/styles/components/Header.css";
 import PlatziLogo from "../assets/images/logo-platzi-video-BW2.png";
 import ProfileImage from "../assets/images/user-icon.png";
@@ -7,7 +8,9 @@ function Header() {
   return (
     <>
       <header className="header">
-        <img className="header__img" src={PlatziLogo} alt="Platzi Video" />
+        <Link to="/">
+          <img className="header__img" src={PlatziLogo} alt="Platzi Video" />
+        </Link>
         <div className="header__menu">
           <div className="header__menu--profile">
             <img src={ProfileImage} alt="ProfileImage" />
@@ -18,7 +21,7 @@ function Header() {
               <a href="/">Cuenta</a>
             </li>
             <li>
-              <a href="/">Cerrar Sesión</a>
+              <Link to="/login">Iniciar Sesión</Link>
             </li>
           </ul>
         </div>
