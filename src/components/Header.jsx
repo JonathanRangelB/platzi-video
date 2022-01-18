@@ -15,7 +15,7 @@ function Header() {
           </div>
           <ul>
             <li>
-              <a href="/">Cuenta</a>
+              <a href="/">Cuentas</a>
             </li>
             <li>
               <a href="/">Cerrar Sesión</a>
